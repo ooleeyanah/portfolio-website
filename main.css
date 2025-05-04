@@ -1,0 +1,440 @@
+:root{
+    --background:#f7ede2;
+    --font:#333;
+    --sidebar-yellow:#f6bd60;
+    --accent-pink:#f5cac3;
+    --accent-red:#f28482;
+    --accent-green:#84a59d;
+    --accent-blue:#93B9F6;
+    
+}
+body{
+    background-color:var(--background);
+    font-family:'Lucida Grande', sans-serif;
+    color:var(--font);
+   
+    
+}
+body ul{
+    
+    list-style-type: none;
+    
+}
+#uli-logo{
+    position:relative;
+    top: 0; 
+    left: 0; 
+    width: 60%; 
+    height: 60%; 
+    object-fit: contain; 
+    pointer-events: none;   
+}
+#uli-tag{
+    position:relative;
+    top: 0; 
+    left: 0; 
+    width: 80%; 
+    height: 60%; 
+    object-fit: contain; 
+    pointer-events: none;   
+}
+#skills-container {
+    position: relative; /* Ensure the container is positioned for pseudo-elements */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    background: var(--font);
+    overflow: hidden; /* Prevent pseudo-elements from overflowing */
+}
+
+#skills-container::before,
+#skills-container::after {
+    content: ""; /* Add content for pseudo-elements */
+    position: absolute;
+    background-color: transparent; /* Ensure the background is transparent */
+    pointer-events: none; /* Prevent the pseudo-elements from interfering with hover effects */
+}
+
+#skills-container::before {
+    top: 0;
+    left: 0;
+    width: 33.33%; /* Extend the border a third of the way horizontally */
+    height: 33.33%; /* Extend the border a third of the way vertically */
+    border-left: 10px solid var(--accent-pink); /* Left border */
+    border-top: 10px solid var(--accent-pink); /* Top border */
+}
+
+#skills-container::after {
+    bottom: 0;
+    right: 0;
+    width: 33.33%; /* Extend the border a third of the way horizontally */
+    height: 33.33%; /* Extend the border a third of the way vertically */
+    border-right: 10px solid var(--accent-pink); /* Right border */
+    border-bottom: 10px solid var(--accent-pink); /* Bottom border */
+}
+
+.skills-column {
+    display: grid;
+    grid-template-rows: auto 1fr; 
+    gap: 10px;
+}
+
+.skills-column h3 {
+    margin: 0;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    color:var(--background);
+}
+
+.skills-column ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 5px; 
+}
+
+.skills-column li {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    color: var(--background);
+}
+
+#sidebar {
+    width: 250px; 
+    background-color: var(--sidebar-yellow); 
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+#profile-pic {
+    margin-top: 20px; 
+    position: relative; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    width: 150px; 
+    height: 150px; 
+    overflow: hidden; 
+}
+
+.circle-frame {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    transition: transform 0.6s ease; 
+    backface-visibility: hidden; 
+}
+
+#profile-pic::after {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    border-radius: 50%; 
+    background-image: url('./images/portfolio-pic-real.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    transform: rotateY(180deg);
+    backface-visibility: hidden; 
+    transition: transform 0.6s ease;
+}
+
+#profile-pic:hover .circle-frame {
+    transform: rotateY(180deg); 
+}
+
+#profile-pic:hover::after {
+    transform: rotateY(0deg); 
+}
+
+.hover-text {
+    font-size: 14px; 
+    color: var(--font);
+    line-height: 1.5;
+    margin-left: auto; 
+    text-align: right; 
+}
+
+#intro {
+    color: var(--font);
+    font-size: 16px;
+    line-height: 1.5;
+}
+.divider{
+    width: 100%; 
+    height: 7%; 
+    
+}
+#intro-icon-box {
+    background: none; /* Default background */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.intro-item {
+    display: inline-flex; /* Align the image and text horizontally */
+    align-items: center; /* Vertically align the image and text */
+    gap: 5px; /* Add spacing between the image and text */
+    padding: 5px 10px; /* Add padding for better spacing */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.intro-item:hover {
+    background-color: var(--accent-pink); /* Change background on hover */
+}
+
+.location-icon, .heart-icon {
+    width: 20px; /* Set a consistent size for the icons */
+    height: 20px;
+}
+#container {
+    margin-left: 270px; 
+    padding: 20px;
+}
+.location-icon, .heart-icon {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 5px; 
+}
+
+#icon-h3{
+    font-size: 1.5em; 
+    margin-bottom: 10px; 
+    text-align:center;
+    width:100%;
+}
+.icon-row {
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center; 
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+    gap: 20px; 
+}
+
+.icon-row li {
+    text-align: center; 
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px; 
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease; 
+}
+#intro img {
+    margin-right: 20px;
+}
+.lang-icon,.tool-icon,.other-icon{
+    width: 50px; 
+    height: 
+    50px; 
+    align-items:center;
+}
+
+
+#header {
+    position: relative;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+#uli-computer {
+    position: fixed;
+    top: 40px; 
+    right: 0;
+    width: 40%; 
+    height: 50%; 
+    object-fit: contain; 
+    pointer-events: none; 
+    z-index:-1;
+    padding:0;
+    margin:0;
+}
+
+.skills-header {
+    display: flex; 
+    align-items: left; 
+    gap: 10px; 
+    margin-bottom: 10px; 
+    padding-bottom: 1.5vh;
+    border-bottom:#f28482 2px solid;
+}
+
+.lang-icon,
+.tool-icon,
+.other-icon {
+    width: 40px; 
+    height: 40px; 
+    object-fit: contain; 
+}
+
+/* Animation for .skills-header */
+.skills-header:hover {
+    animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.skill-icon{
+    width: 40px; 
+    height: 40px;
+    object-fit: contain; 
+}
+/* Default styling for #skill */
+#skill {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    padding: 10px; 
+    border: 2px solid transparent; 
+    border-radius: 5px; 
+    transition: border-color 0.3s ease; 
+    text-align: left;
+}
+
+#skill span {
+    font-size: 1em; 
+    color: var(--background); 
+    line-height: 1.2; 
+}
+
+
+
+.skill {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+    padding: 10px; 
+    border: 2px solid transparent; 
+    border-radius: 5px; 
+    text-align: left; 
+}
+
+.skill-icon {
+    width: 40px; 
+    height: 40px;
+    object-fit: contain; 
+}
+
+.skill span {
+    font-size: 1em; 
+    color: var(--background); 
+    line-height: 1.2; 
+    
+}
+
+#skill:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    transition: box-shadow 0.3s ease;
+    border-color: var(--accent-pink); 
+    background-color: var(--accent-pink);
+    color: var(--font); 
+    font-weight: bold; 
+}
+
+#skill:hover span {
+    color: var(--font); 
+}
+/* Project styling */
+.projects-head img{
+    width: 30%; 
+    height: 10%;
+    display: flex; 
+    align-items: left; 
+    gap: 10px; 
+    margin-bottom: 10px; 
+    padding-bottom: 1.5vh;
+    
+}
+#projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; 
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.project-card {
+    position: relative; /* Ensure the card is a relative container */
+    background-color: var(--font);
+    border-radius: 10px; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align content horizontally */
+}
+.project-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2); 
+}
+.project-card h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: var(--background);
+}
+.project-card p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: var(--background);
+}
+.project-icon{
+    width: 200px; 
+    height: 200px; 
+    object-fit: contain; 
+}
+#github-catnap {
+    display: block; /* Make the button always visible */
+    font-family: 'Lucida Grande', sans-serif; /* Set the font */
+    background-color: var(--accent-blue); /* Add a background color */
+    color: var(--background); /* Set the text color */
+    padding: 15px 30px; /* Add padding for a larger button */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change the cursor to a pointer */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 20px; /* Add spacing above the button */
+    font-size: 1.2em; /* Increase font size */
+    text-align: center; /* Center-align the text */
+}
+
+#github-catnap:hover {
+    background-color: var(--accent-red); /* Change background color on hover */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+.gap{
+    margin-bottom: 5vh; 
+}
+
