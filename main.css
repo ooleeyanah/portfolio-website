@@ -415,7 +415,7 @@ body ul{
     height: 200px; 
     object-fit: contain; 
 }
-#github-catnap {
+#github-click {
     display: block; /* Make the button always visible */
     font-family: 'Lucida Grande', sans-serif; /* Set the font */
     background-color: var(--accent-blue); /* Add a background color */
@@ -430,7 +430,7 @@ body ul{
     text-align: center; /* Center-align the text */
 }
 
-#github-catnap:hover {
+#github-click:hover {
     background-color: var(--accent-red); /* Change background color on hover */
     transform: scale(1.1); /* Slightly enlarge the button on hover */
 }
