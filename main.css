@@ -39,7 +39,7 @@ body ul{
     pointer-events: none;   
 }
 #skills-container {
-    position: relative; /* Ensure the container is positioned for pseudo-elements */
+    position: relative; 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px; 
@@ -48,33 +48,33 @@ body ul{
     margin: 0 auto;
     text-align: left;
     background: var(--font);
-    overflow: hidden; /* Prevent pseudo-elements from overflowing */
+    overflow: hidden; 
 }
 
 #skills-container::before,
 #skills-container::after {
-    content: ""; /* Add content for pseudo-elements */
+    content: ""; 
     position: absolute;
-    background-color: transparent; /* Ensure the background is transparent */
-    pointer-events: none; /* Prevent the pseudo-elements from interfering with hover effects */
+    background-color: transparent;
+    pointer-events: none; 
 }
 
 #skills-container::before {
     top: 0;
     left: 0;
-    width: 33.33%; /* Extend the border a third of the way horizontally */
-    height: 33.33%; /* Extend the border a third of the way vertically */
-    border-left: 10px solid var(--accent-pink); /* Left border */
-    border-top: 10px solid var(--accent-pink); /* Top border */
+    width: 33.33%; 
+    height: 33.33%; 
+    border-left: 10px solid var(--accent-pink); 
+    border-top: 10px solid var(--accent-pink); 
 }
 
 #skills-container::after {
     bottom: 0;
     right: 0;
-    width: 33.33%; /* Extend the border a third of the way horizontally */
-    height: 33.33%; /* Extend the border a third of the way vertically */
-    border-right: 10px solid var(--accent-pink); /* Right border */
-    border-bottom: 10px solid var(--accent-pink); /* Bottom border */
+    width: 33.33%; 
+    height: 33.33%; 
+    border-right: 10px solid var(--accent-pink);
+    border-bottom: 10px solid var(--accent-pink);
 }
 
 .skills-column {
@@ -183,25 +183,25 @@ body ul{
     
 }
 #intro-icon-box {
-    background: none; /* Default background */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    background: none; 
+    transition: background-color 0.3s ease; 
 }
 
 .intro-item {
-    display: inline-flex; /* Align the image and text horizontally */
-    align-items: center; /* Vertically align the image and text */
-    gap: 5px; /* Add spacing between the image and text */
-    padding: 5px 10px; /* Add padding for better spacing */
-    border-radius: 5px; /* Add rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    display: inline-flex;
+    align-items: center;
+    gap: 5px; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
 }
 
 .intro-item:hover {
-    background-color: var(--accent-pink); /* Change background on hover */
+    background-color: var(--accent-pink); 
 }
 
 .location-icon, .heart-icon {
-    width: 20px; /* Set a consistent size for the icons */
+    width: 20px; 
     height: 20px;
 }
 #container {
@@ -386,15 +386,15 @@ body ul{
     margin: 0 auto;
 }
 .project-card {
-    position: relative; /* Ensure the card is a relative container */
+    position: relative; 
     background-color: var(--font);
     border-radius: 10px; 
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease; 
     display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center-align content horizontally */
+    flex-direction: column; 
+    align-items: center; 
 }
 .project-card:hover {
     transform: translateY(-5px); 
@@ -416,23 +416,23 @@ body ul{
     object-fit: contain; 
 }
 #github-click {
-    display: block; /* Make the button always visible */
-    font-family: 'Lucida Grande', sans-serif; /* Set the font */
-    background-color: var(--accent-blue); /* Add a background color */
-    color: var(--background); /* Set the text color */
-    padding: 15px 30px; /* Add padding for a larger button */
-    border: none; /* Remove the border */
-    border-radius: 5px; /* Add rounded corners */
-    cursor: pointer; /* Change the cursor to a pointer */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
-    margin-top: 20px; /* Add spacing above the button */
-    font-size: 1.2em; /* Increase font size */
-    text-align: center; /* Center-align the text */
+    display: block; 
+    font-family: 'Lucida Grande', sans-serif;
+    background-color: var(--accent-blue); 
+    color: var(--background);
+    padding: 15px 30px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px; 
+    font-size: 1.2em;
+    text-align: center;
 }
 
 #github-click:hover {
-    background-color: var(--accent-red); /* Change background color on hover */
-    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    background-color: var(--accent-red); 
+    transform: scale(1.1); 
 }
 .gap{
     margin-bottom: 5vh; 
