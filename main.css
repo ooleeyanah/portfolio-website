@@ -59,23 +59,6 @@ body ul{
     pointer-events: none; 
 }
 
-#skills-container::before {
-    top: 0;
-    left: 0;
-    width: 33.33%; 
-    height: 33.33%; 
-    border-left: 10px solid var(--accent-pink); 
-    border-top: 10px solid var(--accent-pink); 
-}
-
-#skills-container::after {
-    bottom: 0;
-    right: 0;
-    width: 33.33%; 
-    height: 33.33%; 
-    border-right: 10px solid var(--accent-pink);
-    border-bottom: 10px solid var(--accent-pink);
-}
 
 .skills-column {
     display: grid;
