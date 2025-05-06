@@ -420,4 +420,86 @@ body ul{
 .gap{
     margin-bottom: 5vh; 
 }
+@media (max-width: 768px) {
+    
+    body {
+        font-size: 14px; 
+    }
+
+    
+    #sidebar {
+        width: 100%; 
+        height: auto;
+        position: relative; 
+        padding: 10px; 
+        box-shadow: none; 
+    }
+
+    #profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .circle-frame {
+        width: 100px;
+        height: 100px;
+    }
+
+    #container {
+        margin-left: 0; 
+        padding: 10px; 
+    }
+
+    #header {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #uli-logo, #uli-tag, #uli-computer {
+        width: 80%; 
+        height: auto;
+    }
+
+    #skills-container {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+    }
+
+    .skills-column {
+        text-align: center; 
+    }
+
+    .skills-header {
+        justify-content: center; 
+    }
+
+    #projects-container {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+
+    .project-card {
+        padding: 15px; 
+    }
+
+    .project-icon {
+        width: 150px; 
+        height: 150px;
+    }
+
+    #github-click {
+        font-size: 1em; 
+        padding: 10px 20px;
+    }
+
+    .icon-row {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .icon {
+        width: 40px; 
+        height: 40px;
+    }
+}
 
