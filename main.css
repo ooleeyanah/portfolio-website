@@ -428,7 +428,7 @@ body ul{
 
     
     #sidebar {
-        width: 100%; 
+        width: 90%; 
         height: auto;
         position: relative; 
         padding: 10px; 
@@ -471,6 +471,16 @@ body ul{
 
     .skills-header {
         justify-content: center; 
+    }
+    .projects-head img{
+        width: 40%; 
+        height: 40%;
+        display: flex; 
+        align-items: center; 
+        gap: 10px; 
+        margin-bottom: 10px; 
+        padding-bottom: 1.5vh;
+        
     }
 
     #projects-container {
