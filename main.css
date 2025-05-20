@@ -378,6 +378,7 @@ body ul{
     display: flex;
     flex-direction: column; 
     align-items: center; 
+    justify-content: flex-start;
 }
 .project-card:hover {
     transform: translateY(-5px); 
@@ -399,23 +400,24 @@ body ul{
     object-fit: contain; 
 }
 #github-click {
+    margin-top: auto;
+    align-self: stretch; 
     display: block; 
     font-family: 'Lucida Grande', sans-serif;
     background-color: var(--accent-blue); 
     color: var(--background);
     padding: 15px 30px; 
     border: none;
-    border-radius: 5px; 
+    border-radius: 0 0 10px 10px;
     cursor: pointer; 
     transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-top: 20px; 
     font-size: 1.2em;
     text-align: center;
 }
 
 #github-click:hover {
     background-color: var(--accent-red); 
-    transform: scale(1.1); 
+    transform: scale(1.05); 
 }
 .gap{
     margin-bottom: 5vh; 
@@ -455,7 +457,7 @@ body ul{
         align-items: center; 
     }
 
-    #uli-logo, #uli-tag, #uli-computer {
+    #uli-logo, #uli-tag, #uli_computer {
         width: 80%; 
         height: auto;
     }
