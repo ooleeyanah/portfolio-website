@@ -6,6 +6,7 @@
     --accent-red:#f28482;
     --accent-green:#84a59d;
     --accent-blue:#93B9F6;
+    --github-green:#6cc644;
     
 }
 body{
@@ -399,25 +400,63 @@ body ul{
     height: 200px; 
     object-fit: contain; 
 }
-#github-click {
+.project-card-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px; /* Adjust gap as needed */
+    width: 100%;
     margin-top: auto;
-    align-self: stretch; 
-    display: block; 
+}
+
+.github-click,
+.website-click {
+ 
+    align-self: normal;
+    display: block;
     font-family: 'Lucida Grande', sans-serif;
-    background-color: var(--accent-blue); 
     color: var(--background);
-    padding: 15px 30px; 
+    padding: 15px 0;
     border: none;
-    border-radius: 0 0 10px 10px;
-    cursor: pointer; 
+    border-radius: 10px;
+    cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     font-size: 1.2em;
     text-align: center;
+    margin: 5%;
+}
+.github-click {
+    background-color: var(--github-green);
+    color: white;
+}
+.website-click {
+    background-color: var(--accent-blue);
+    color: white;
+}
+.in-progress{
+    align-self: normal;
+    display: block;
+    background-color: var(--accent-red);
+    color: white;
+    padding: 15px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: not-allowed;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 5%;
 }
 
-#github-click:hover {
-    background-color: var(--accent-red); 
-    transform: scale(1.05); 
+.github-click:hover,
+.website-click:hover {
+    background-color: var(--accent-red);
+    transform: scale(1.05);
+}
+.github-btn-icon, .website-btn-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 2px;
 }
 .gap{
     margin-bottom: 5vh; 
