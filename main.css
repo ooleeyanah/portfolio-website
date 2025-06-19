@@ -553,4 +553,104 @@ body ul{
         height: 40px;
     }
 }
+#cat-cursor-btn{
+    position: absolute;
+    bottom: 20%;
+    left: 83%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+#cat-cursor-btn:hover {
+    transform: scale(1.05);
+}
+#cat-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    pointer-events: none;
+    z-index: 99999;
+    display: none;
+}
 
+.cat-face {
+    position: absolute;
+    left: 4px; 
+    top: 12px;
+    width: 40px; 
+    height: 28px;
+    background: radial-gradient(circle at 50% 60%, var(--background) 60%, var(--accent-pink) 100%);
+    border-radius: 50% 50% 60% 60% / 60% 60% 100% 100%;
+    box-shadow: 0 0 16px 4px #f5cac3, 0 0 32px 8px #f28482;
+}
+
+.cat-ear {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -3px;
+    /* Create a triangle for pointy ears */
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 22px solid var(--background);
+    background: none;
+    border-radius: 0; /* Remove rounded corners for pointy effect */
+    z-index: 1;
+}
+.cat-ear.left { 
+    left: 0px; 
+    transform: rotate(-18deg);
+}
+.cat-ear.right { 
+    right: 0px; 
+    transform: rotate(18deg);
+}
+
+.cat-eye {
+    position: absolute;
+    width: 5px; height: 7px;
+    background: #333;
+    border-radius: 50%;
+    top: 10px;
+}
+.cat-eye.left { left: 8px; }
+.cat-eye.right { right: 8px; }
+
+.cat-nose {
+    position: absolute;
+    left: 17px; top: 18px;
+    width: 6px; height: 4px;
+    background: var(--accent-red);
+    border-radius: 50% 50% 60% 60% / 60% 60% 100% 100%;
+}
+
+.cat-whisker {
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    background: #333;
+    top: 20px;
+    border-radius: 1px;
+}
+.cat-whisker.left { 
+    left: -10px; 
+    transform: rotate(-15deg);
+}
+.cat-whisker.left.second {
+    left: -7px;
+    top: 25px;
+    transform: rotate(-30deg);
+}
+.cat-whisker.right { 
+    right: -10px; 
+    transform: rotate(15deg);
+}
+.cat-whisker.right.second {
+    right: -7px;
+    top: 25px;
+    transform: rotate(30deg);
+}
