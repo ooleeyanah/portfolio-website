@@ -14,7 +14,7 @@
         <div id="header">
             <img src="./images/uliana-logo.png" alt="Uliana Deshin Logo" id="uli-logo">
             <img src="./images/uliana-tag.png" alt="Uliana Deshin Tagline" id="uli-tag">
-            <img src="./images/uli-computer-scribble.png" id="uli-computer">
+        
         </div>
         <div class="gap">
             <img
@@ -32,18 +32,19 @@
          
             <div id="intro">
                 
-                <p>I am a developer and graphic designer for websites and desktop applications.</p> 
+                <p>I am a web developer and artist. I am fuelled by curiosity and a love for all things adorable.</p> 
                 <img src="./images/divider-pink.png" alt="Divider" class="divider">
                 <p id="intro-icon-box">
+                     <span class="intro-item">
+                        <img src="./images/email_icon_svg.svg" alt="Email Icon" class="email-icon"> uliana.deshin@gmail.com
+                    </span>
                     <span class="intro-item">
                         <img src="./images/location-icn.png" alt="Location Icon" class="location-icon"> Melbourne, Australia
                     </span>
                     <span class="intro-item">
                         <img src="./images/heart-icon.png" alt="Heart Icon" class="heart-icon"> Front-end Development
                     </span>
-                    <span class="intro-item">
-                        <img src="./images/heart-icon.png" alt="Heart Icon" class="heart-icon"> Education Technology
-                    </span>
+                   
                     <span class="intro-item">
                         <img src="./images/heart-icon.png" alt="Heart Icon" class="heart-icon"> Graphic Design
                     </span>
@@ -103,10 +104,7 @@
                         <img src="./images/typescript-logo.png" class="skill-icon" alt="Typescript Icon">
                         <span>Typescript</span>
                     </li>
-                    <li id="skill">
-                        <img src="./images/node-js-icon-1817x2048-g8tzf91e.png" class="skill-icon" alt="Node.js Icon">
-                        <span>Node.js</span>
-                    </li>
+                    
                 </ul>
             </div>
             <div class="skills-column">
@@ -115,6 +113,14 @@
                     <h3>Frameworks & Tools</h3>
                 </div>
                 <ul>
+                    <li id="skill">
+                        <img src="./images/node-js-icon-1817x2048-g8tzf91e.png" class="skill-icon" alt="Node.js Icon">
+                        <span>Node.js</span>
+                    </li>
+                    <li id="skill">
+                        <img src="./images/Express_icon.png" class="skill-icon" alt="Express Icon">
+                        <span>Express</span>
+                    </li>
                     <li id="skill"><img src="./images/electron-icon-512x512-vzubfomx.png" class="skill-icon" id="electron-icon">Electron JS</li>
                     <li id="skill"><img src="./images/vs-code-icon.png" class="skill-icon" id="vscode-icon">VS Code</li>
                     <li id="skill"><img src="./images/figma-icon-1366x2048-tdlpz5c4.png" class="skill-icon" id="figma-icon">Figma</li>
@@ -185,6 +191,36 @@
                 <div class="cat-whisker right second"></div>
               </div>
             </div>
-            <script src="main.js"></script>
+          
+
+
+<div id="uli-computer-container">
+  <img src="./images/uli-computer-scribble.png" id="uli-computer" alt="Computer">
+  <div id="uli-computer-screen">
+    <button id="show-contact-btn">Contact!</button>
+ 
+  </div>
+   
+  </div>
+  <!-- Contact Modal -->
+<div id="contact-modal" >
+  <div id="contact-modal-content">
+    <button id="close-contact-modal" aria-label="Close" >×</button>
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSedl8LvaC3HYJx8cg0FcciUoeQok_BHuxDjRlHuv1RzatUnBg/formResponse" method="POST" id = "contact-form">
+  <label for="name">Name:</label>
+  <input type="text" name="entry.21117265" id="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" name="entry.905777175" id="email" required>
+
+  <label for="message">Message:</label>
+  <textarea name="entry.1811890507" id="message" rows="5" required></textarea>
+
+  <button type="submit">Send</button>
+   <span id="form-status"></span>
+</form>
+  </div>
+</div>
+   <script src="main.js"></script>
 </body>
 </html>
