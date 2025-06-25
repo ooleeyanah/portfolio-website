@@ -37,6 +37,7 @@ document.addEventListener('mousemove', (e) => {
     }
 });
 
+
 window.addEventListener('scroll', function() {
   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
   const scrolled = window.scrollY;
