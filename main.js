@@ -37,7 +37,7 @@ document.addEventListener('mousemove', (e) => {
     }
 });
 
-
+/*
 const showContactBtn = document.getElementById('show-contact-btn');
 const contactModal = document.getElementById('contact-modal');
 const closeContactModal = document.getElementById('close-contact-modal');
@@ -79,3 +79,4 @@ contactModal.addEventListener('click', function(e) {
       });
     });
   }
+*/
