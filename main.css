@@ -577,23 +577,6 @@ background-image: url('./images/sidebar_bg_svg.svg');
     flex-direction: column;
     align-items: center;
     pointer-events: auto;
-    transition:
-        top 0.8s cubic-bezier(.68,-0.55,.27,1.55),
-        right 1.2s cubic-bezier(.68,-0.55,.27,1.55),
-        bottom 1.2s cubic-bezier(.68,-0.55,.27,1.55),
-        left 0.8s cubic-bezier(.68,-0.55,.27,1.55),
-        width 0.8s cubic-bezier(.68,-0.55,.27,1.55),
-        transform 0.8s cubic-bezier(.68,-0.55,.27,1.55);
-}
-
-#uli-computer-container.grow {
-    position: fixed;
-    top: auto;
-    bottom: 40px; 
-    right: 7vw;  
-    width: 600px;
-    transform: scale(1.2);
-    z-index: 10000;
 }
 
 
@@ -717,9 +700,8 @@ background-image: url('./images/sidebar_bg_svg.svg');
     justify-content: center;
 }
 #show-contact-btn {
-   opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+    opacity: 1;
+     pointer-events: auto;
     position: absolute;
     z-index: 9999;
     top: 25%;  
@@ -730,10 +712,6 @@ background-image: url('./images/sidebar_bg_svg.svg');
     align-items: center;
     justify-content: center;
     cursor: pointer;
-}
-#uli-computer-container.grow #show-contact-btn {
-    opacity: 1;
-    pointer-events: auto;
 }
 #show-contact-btn:hover {
      filter: brightness(0.9);

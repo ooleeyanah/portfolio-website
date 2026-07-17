@@ -38,20 +38,6 @@ document.addEventListener('mousemove', (e) => {
 });
 
 
-window.addEventListener('scroll', function() {
-  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-  const scrolled = window.scrollY;
-
-  const uliComputer = document.getElementById('uli-computer');
-  const uliComputerContainer = document.getElementById('uli-computer-container');
-  const computerScreen = document.getElementById('computer-screen');
-
-  if (scrollable - scrolled < 50) { // near bottom
-    uliComputerContainer.classList.add('grow');
-  } else {
-    uliComputerContainer.classList.remove('grow');
-  }
-});
 const showContactBtn = document.getElementById('show-contact-btn');
 const contactModal = document.getElementById('contact-modal');
 const closeContactModal = document.getElementById('close-contact-modal');
